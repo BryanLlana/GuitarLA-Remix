@@ -1,0 +1,154 @@
+:root {
+  --primary: #e99401;
+  --black: #262626;
+  --white: #FFF;
+  --fuente-principal: 'Outfit', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+[class*="contenedor"],
+main {
+  width: min(95%, 120rem);
+  margin: 3rem auto;
+}
+
+[class*="heading"] {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--primary);
+  margin: 5rem 0;
+}
+
+/** Header */
+.header {
+  background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(/img/header.jpg);
+  padding: 4rem 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .logo {
+  width: 35rem;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(width >=76.8rem) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header .navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+@media (width >=76.8rem) {
+  .header .navegacion {
+    margin-top: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.header .navegacion a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+  transition: color ease-in-out .2s;
+}
+
+.header .navegacion a:hover,
+.header .navegacion .active {
+  color: var(--primary);
+}
+
+/** Footer */
+.footer {
+  background-color: var(--black);
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+
+.footer .contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (width >=76.8rem) {
+  .footer .contenido {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer .navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+@media (width >=76.8rem) {
+  .footer .navegacion {
+    margin-top: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.footer .navegacion a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+  transition: color ease-in-out .2s;
+}
+
+.footer .navegacion a:hover {
+  color: var(--primary);
+}
+
+.footer .copyright {
+  color: var(--white);
+}
