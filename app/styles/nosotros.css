@@ -1,0 +1,12 @@
+.nosotros .contenido {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (width >= 76.8rem){
+  .nosotros .contenido {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
