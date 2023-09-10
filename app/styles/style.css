@@ -164,3 +164,21 @@ main {
   color: var(--primary);
   text-decoration: none;
 }
+
+.enlace {
+  margin-top: 2rem;
+  display: block;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  padding: .8rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: background-color ease-in-out .2s;
+}
+
+.enlace:hover {
+  background-color: var(--primary);
+}
