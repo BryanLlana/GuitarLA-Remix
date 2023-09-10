@@ -1,4 +1,4 @@
-import { Meta, Links, Outlet, Scripts, LiveReload } from '@remix-run/react'
+import { Meta, Links, Outlet, Scripts, LiveReload, useCatch, useRouteError, isRouteErrorResponse } from '@remix-run/react'
 
 import styles from '~/styles/style.css'
 import Header from '~/components/header'
@@ -69,3 +69,4 @@ const Document = ({children}) => {
     </html>
   )
 }
+
