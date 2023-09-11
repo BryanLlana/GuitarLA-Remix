@@ -1,9 +1,8 @@
-import { useLoaderData, useRouteError, Link } from '@remix-run/react'
+import { Link, useLoaderData, useRouteError } from '@remix-run/react'
 
 import styles from '~/styles/guitarras.css'
 import { obtenerGuitarra } from '../models/guitarra.server'
 
-//* Manejo de errores
 export const ErrorBoundary = () => {
   const error = useRouteError()
   
