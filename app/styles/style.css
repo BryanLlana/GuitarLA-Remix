@@ -97,6 +97,10 @@ main {
   color: var(--primary);
 }
 
+.header .navegacion img {
+  width: 3rem;
+}
+
 /** Footer */
 .footer {
   background-color: var(--black);
@@ -149,6 +153,10 @@ main {
   color: var(--primary);
 }
 
+.footer .navegacion img {
+  display: none;
+}
+
 .footer .copyright {
   color: var(--white);
 }
@@ -181,4 +189,23 @@ main {
 
 .enlace:hover {
   background-color: var(--primary);
+}
+
+.red {
+  background-color: #E6474C;
+}
+
+.green {
+  background-color: #59EB68;
+}
+
+.alerta {
+  text-align: center;
+  width: 60rem;
+  max-width: 100%;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 0;
+  font-weight: bold;
+  color: var(--white);
+  font-size: 2.3rem;
 }
